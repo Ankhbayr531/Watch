@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StopWatch</title>
+        <style>
+            body{
+                background-image: url(https://wallpapers.com/images/hd/beautiful-galaxy-12iufk1tgkgs3eyz.jpg);
+                background-repeat:no-repeat;
+	            background-size:cover;
+	            background-attachment:fixed;
+	            background-position:top;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height:90vh
+            }
+            .watch{
+                background-color: #fff;
+                padding:15px;
+                border-radius: 10px;
+                width:300px;
+            }
+            .watch h1{
+                text-align: center;
+            }
+            ol{
+                height: 200px;
+                overflow-y:scroll;
+            }
+            .watch .a{
+                margin-left: 20px;
+                border-radius: 5px;
+                background-color: #04ff04;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .watch .b{
+                border-radius: 5px;
+                background-color: #fd3e3e;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .watch .c{
+                border-radius: 5px;
+                background-color: #fff700;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+            .watch .d{
+                border-radius: 5px;
+                background-color: #9c008c;
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="watch">
+            <h1>00:00:00:00</h1>
+            <button class="a" onclick="start()">Start</button>
+            <button class="b" onclick="stop()">Stop</button>
+            <button class="c" onclick="restart()">Restart</button>
+            <button class="d" onclick="lap()">Lap</button>
+            <ol>
+                
+            </ol>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
